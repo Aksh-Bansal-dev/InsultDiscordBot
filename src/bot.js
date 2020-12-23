@@ -16,7 +16,8 @@ const insultApi = async ()=>{
 
 client.login(process.env.DISCORD_TOKEN);
 
-const regex = /(.+)?<@!?425643006813536286>(.+)?/;
+//const regex = /(.+)?<@!?425643006813536286>(.+)?/;
+const regex = /(.+)?(aksh|<@!?425643006813536286>)(.+)?/i;
 
 client.on("message",async (message)=>{
     const msg = message.content;
@@ -26,7 +27,7 @@ client.on("message",async (message)=>{
         const user = msg.substr(1,msg.length);
         // console.log(msg);
         if(user.match(regex)){
-            message.reply(`you should not insult ${user}.`)
+            message.reply(`Bhakk bey:laughing:`);
         }else{
             const {insult} = await insultApi();
             message.channel.send(`${user} \n ${insult}`);
