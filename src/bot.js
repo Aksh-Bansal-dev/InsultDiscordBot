@@ -22,7 +22,6 @@ client.on("message",async (message)=>{
     // !@username will send an insult msg to that username
     if(msg.length>3 && msg.charAt(0)==='!' && msg.charAt(2)==='@'){
         const user = msg.trim().substr(2,msg.length).split(/\s+/)[0];
-        // console.log(user);
         if(user===" @markaksh" || user===" @Aksh"){
             message.reply(`you should not insult ${user}.`)
         }else{
