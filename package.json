@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./src/bot"
+    "dev": "nodemon ./src/bot",
+    "start": "node ./src/bot"
   },
   "author": "Aksh Bansal",
   "license": "ISC",
