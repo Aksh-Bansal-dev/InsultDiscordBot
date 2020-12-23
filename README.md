@@ -1,5 +1,5 @@
 # InsultDiscordBot
-Discord Bot that insults you.
+A Discord Bot that insults you.
 
 # Command
 - ``` ! @username ```
